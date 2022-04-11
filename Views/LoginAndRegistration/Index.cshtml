@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Register</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    @{
+        UserRegistration userRegistration = new UserRegistration();
+    }
+    @{
+        UserLogin userLogin = new UserLogin();
+    }
+    <div class="flex_row space_between">
+        <div class="flex_col">
+            <h1>Register:</h1>
+            <partial name="RegistrationPartial" model="userRegistration"></partial>
+        </div>
+        <div class="flex_col">
+            <h1>Login:</h1>
+            <partial name="LoginPartial" model="userLogin"></partial>
+        </div>
+    </div>
+</body>
+</html>

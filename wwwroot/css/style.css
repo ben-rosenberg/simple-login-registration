@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 30px 150px;
+}
+
+.flex_row {
+    display: flex;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+
+.gap {
+    gap: 20px;
+}
+
+.success {
+    margin: 300px auto;
+    color: green;
+}
